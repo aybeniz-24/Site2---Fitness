@@ -1,0 +1,149 @@
+:root{
+    --yasil: #a1c927;
+    --qirmizi: #fd634d;
+}
+header{
+    position: relative;
+    background: url(../img/headerbg.jpg) no-repeat 55%/cover;
+    text-align: center;
+    height: 100vw;
+}
+nav { padding: 40px 50px}
+#menu {padding: 1em 0 0 0}
+#menu li a {
+    font: .8em 'Avenir Next Rounded Std';
+    text-transform: uppercase;
+}
+#title {
+    position: absolute;
+    width: 100%;
+    bottom: 16.5vh;
+}
+h1, h2, h5,h6 {text-transform: uppercase}
+h1,h5 {
+    font: "Myriad Pro";
+    font-weight: 400;
+}
+h1{font-size: 2em}
+h2{font: 300 2.1em 'Open Sans'}
+h3{ font: normal 1.5em 'Open Sans'; padding: 1em 0 0 0;}
+h5{font-size: 1em; letter-spacing: 3px}
+h6{font: 400 .9em Montserrat}
+
+.bgag {background: #fff}
+.bgyasil {background: var(--yasil)}
+.bgqirmizi {background: var(--qirmizi)}
+.txtag {color: #fff}
+.txtyasil {color: #a1c927}
+.txtqirmizi {color: #fd634d}
+.vh50{min-height: 50vh;}
+.txtcenter{text-align: center}
+.artpadding{padding: 50px 40px}
+#art4{padding: 80px 0}
+#art4 article{padding: 40px 10px}
+#art4 article i{font-size: 3em}
+#art4 p{font: .9em/1.5 'Proxima Nova'; padding: 1em 0;}
+.rowP{font: 400 .7em "Open Sans";
+    line-height: 26px;
+}
+.txtcolor{color: #656e74}
+.text{margin-top: 28px;
+    font-size: .5em ;}
+
+
+#fitnessfirst{background: url('../img/fitnessfirst.jpg') center/cover}
+#yourbody{background: url('../img/youbody.jpg') center/cover}
+#lifestyle{background: url('../img/lifestyle.jpg') center/cover}
+#summeroffun{background: url('../img/summeroffun.jpg') center/cover}
+#grape{background: url('../img/grape.jpg') center/cover}
+#mango{background: url('../img/mango.jpg') center/cover}
+#footertop{
+    background: url(../img/footerbg.jpg) 62%/cover;
+    height: 100vh;
+}
+.footertxt{
+    padding-top: 300px ;
+    width: 100%;
+    text-align: center;
+}
+#footerbottom{background: #0c1119}
+#icon i{
+    font-size: 40px;
+    margin: 0 10px;
+}
+.fb:hover{color: darkblue}
+.tw:hover{color: skyblue}
+.ytb:hover{color: red}
+.lnk:hover{color: steelblue}
+.typetxt{
+    width: 80vw;
+    height: 40px;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 2px;
+    outline: none;
+}
+.typesubmit{
+    background: var(--yasil);
+    color: #fff;
+}
+.formpadding{padding: 10px 40px}
+form{
+    margin: auto 50px;
+}
+
+
+/* Desktop version  */
+@media only screen and (min-width: 768px) {
+    header{text-align: initial}
+    #menu{float: right}
+    #menu li{
+        display: inline-block;
+        margin: 0 0 0 4vw;
+    }
+    #title{
+        width: initial;
+        left: 7vw;
+    }
+    h1{font-size: 2.5em}
+    h5{text-align: right; padding: 10px 20px;}
+    .container{
+        max-width: 1180px;
+        margin: auto;
+    }
+    .row::after{
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .col25 { width: 25% }
+    .col33 { width: 33.33% }
+    .col66 { width: 66.66% }
+    .col80 { width: 80% }
+    .fleft { float: left }
+    .fright { float: right }
+    .row3 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+    }
+    .row3padding{ 
+        padding: 0 40px;
+    }
+    
+     .typetxt{
+        width: 200px;
+       
+    }
+    .typesubmit{
+        width: 200px;
+    }
+    form{
+      padding: 0 90px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .inputpadding{
+        margin: 0 5px 50px 0;
+    }
+}
